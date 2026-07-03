@@ -25,6 +25,7 @@ public class SimpleProducer {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            producer.flush();
             producer.close();
         }
     }
